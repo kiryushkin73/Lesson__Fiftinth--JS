@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Document</title>
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="container">
+        <h2>Соберети свою пиццу</h2>
+        <div class="calculator">
+          <div class="calculator__price"></div>
+          <div class="calculator__form calculator-form">
+            <select class="calculator-form__size">
+              <option value="0" disabled selected>Выберете размер пиццы</option>
+              <option value="1" data-size="маленькая (25см)">
+                Маленькая (25см)
+              </option>
+              <option value="1.2" data-size="маленькая (30см)">
+                Средняя (30см)
+              </option>
+              <option value="1.5" data-size="маленькая (38см)">
+                Большая (40см)
+              </option>
+            </select>
+            <button class="calculator-form__submit" disabled>Заказать</button>
+
+            <div class="calculator-form__price">
+              <ul class="calculator-form__list"></ul>
+            </div>
+          </div>
+        </div>
+        <div class="constructor">
+          <div class="constructor__components constructor-components">
+            <h3>
+              <p>Ингредиенты</p>
+            </h3>
+            <ul class="constructor-components__list">
+              <li
+                class="
+                  constructor-components__item
+                  constructor-components__item-ananas
+                "
+                data-price="10"
+                data-name="Ананас"
+              >
+                <p>Ананас</p>
+              </li>
+
+              <li
+                class="
+                  constructor-components__item
+                  constructor-components__item-tomatoes
+                "
+                data-price="5"
+                data-name="Помидоры"
+              >
+                <p>Помидоры</p>
+              </li>
+              <li
+                class="
+                  constructor-components__item
+                  constructor-components__item-olives
+                "
+                data-price="7"
+                data-name="Оливки"
+              >
+                <p>Оливки</p>
+              </li>
+              <li
+                class="
+                  constructor-components__item
+                  constructor-components__item-chicken
+                "
+                data-price="12"
+                data-name="Куриное мясо"
+              >
+                <p>Курица</p>
+              </li>
+              <li
+                class="
+                  constructor-components__item
+                  constructor-components__item-dorblu
+                "
+                data-price="25"
+                data-name="Сыр Чеддер"
+              >
+                <p>Сыр Чеддер</p>
+              </li>
+              <li
+                class="
+                  constructor-components__item constructor-components__item-ham
+                "
+                data-price="15"
+                data-name="Ветчина"
+              >
+                <p>Ветчина</p>
+              </li>
+              <li
+                class="
+                  constructor-components__item
+                  constructor-components__item-mushrooms
+                "
+                data-price="7"
+                data-name="Грибы"
+              >
+                <p>Грибы</p>
+              </li>
+              <li
+                class="
+                  constructor-components__item
+                  constructor-components__item-parmesan
+                "
+                data-price="20"
+                data-name=" Сыр Пармезан"
+              >
+                <p>Пармезан</p>
+              </li>
+
+              <li
+                class="
+                  constructor-components__item
+                  constructor-components__item-fetaCheese
+                "
+                data-price="17"
+                data-name="Сыр Брындза"
+              >
+                <p>Брындза</p>
+              </li>
+              <li
+                class="
+                  constructor-components__item
+                  constructor-components__item-bacon
+                "
+                data-price="13"
+                data-name="Бекон"
+              >
+                <p>Бекон</p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="constructor__pizza constructor-pizza">
+            <ul class="constructor-pizza__list"></ul>
+          </div>
+
+          <div class="constructor__sauces constructor-sauces">
+            <h3>Cоусы</h3>
+            <form class="constructor-sauces__form">
+              <input
+                type="checkbox"
+                id="Pesto"
+                name="pesto"
+                value="pesto"
+                data-price="5"
+                data-name="Соус Песто"
+                checked
+                disabled
+              />
+              <label for="Pesto">Соус Песто</label>
+              <input
+                type="checkbox"
+                id="cream__sauce"
+                name="cream__sauce"
+                value="cream__sauce"
+                data-price="6"
+                data-name="Сливойчный соус"
+                disabled
+              />
+              <label for="cream__sauce">Сливочный соус</label>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <div class="pizza"></div>
+      <div class="popup">
+        <div class="popup__content">
+          <button class="popup_close"></button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

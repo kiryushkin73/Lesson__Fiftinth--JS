@@ -1,0 +1,72 @@
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    animation: show 0.7s;
+}
+.popup-hidden {
+    animation: hidden 0.7s;
+}
+.popup__content {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.popup_close {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    background-color: transparent;
+    background-image: url("../img/closed.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 26px;
+    height: 26px;
+    border-radius: 5px;
+}
+.popup__price {
+    margin: 20px;
+    margin-top: 40px;
+    font-family: 'Courier', monospace;
+    font-size: 2rem;
+    border: 3px solid #000000;
+    background-color: rgba(212, 212, 212, 0.26);
+}
+tbody:nth-child(2) {
+    background-color: red;
+    font-size: 2.3rem;
+    font-weight: 700;
+}
+tbody:last-child {
+    background-color: blanchedalmond;
+    font-size: 30px;
+    font-weight: 700;
+}
+.popup__price > caption {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+td, th {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 4px;
+    border: 2px solid #4c4c4c;
+}
+
+@keyframes show {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+@keyframes hidden {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
